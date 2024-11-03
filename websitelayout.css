@@ -1,0 +1,258 @@
+ /* *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif ;
+
+}
+.container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    grid-template-rows: 0.4fr 1.5fr 1.3fr 0.8fr;
+    color:white;
+    grid-template-areas:"navbar navbar navbar navbar" 
+                        "sidebar main main main"
+                        "sidebar box1 box2 box3"
+                        "sidebar footer footer footer";
+       grid-gap: 0.2rem;
+       text-align: center;
+       font-size: 1.5rem;
+
+
+}
+nav{
+    background-color: skyblue;
+    grid-area: navbar;
+    
+}
+main{
+    background-color: violet;
+    grid-area: main;
+}
+.sidebar{
+    background-color: bisque;
+    grid-area: sidebar;
+}
+.box1{
+    background-color: rgb(30, 173, 230);
+    grid-area: box1;
+}
+.box2{
+    background-color: rgb(178, 30, 223);
+    grid-area: box2;
+
+}
+.box3{
+    background-color: aqua;
+    grid-area: box3;
+
+}
+footer{
+    background-color: rgb(13, 10, 233);
+    grid-area: footer;
+}
+@media screen and (max-width: 500px ) {
+             .container{
+                grid-template-columns: 1fr;
+                grid-template-rows: 0.2fr 2fr 0.2fr 1.2fr 1.2fr 0.2fr 1fr;
+                grid-template-areas: "navbar"
+                "main"
+                "sidebar"
+                "box1"
+                "box2"
+                "box3"
+                "footer";
+             }
+     close up ---------------------________________-------------------------__________________________________---------------------------- _________________-----------------------_______________________--------------------- 
+} */
+ 
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    width: 75%;
+    margin: 50px auto;
+    border: 1px solid gray;
+    background-color: maroon;
+    display: grid;
+    grid-template-rows: 60px 100px 200px 60px;
+    grid-template-columns: repeat(3, 1fr) 100px;
+    grid-gap: 10px;
+    color: white; 
+}
+.div1{
+    background: aqua;
+    grid-column: 1/-1;
+                                                                                    /* header */
+}
+.div1{
+    background: rgb(218, 9, 20);
+}
+.div2{
+                                                                                        /* box1 */
+    background: rgb(11, 25, 218);
+    color: red; 
+    animation-name: vedant;
+    animation-duration: 3s;
+    animation-iteration-count: 3;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    transform: rotate(40deg);
+    transform: rotate(-180deg);
+    transform: rotate(180deg); 
+    }
+    @keyframes  vedant {
+        0%{background-color: aquamarine; color: blue; font-size: 8%;}
+        25%{background-color: antiquewhite; color: beige; font-size: 5%;}
+        50%{background-color: bisque; color: blanchedalmond; font-size: 6%;}
+        75%{background-color: azure; color: blueviolet; font-size: 19px;}
+        100%{background-color: powderblue; color: floralwhite; font-size: 20px;}
+        
+    }
+.div3{
+    background: rgb(183, 223, 173);      
+                                                                                      /* box2 */
+}
+.div4{
+    background: rgb(179, 105, 21); 
+                                                                                       /* box3 */
+}
+.div5{
+    background: rgb(8, 214, 87);
+    grid-row: 2/4;
+    grid-column: 4/5;
+                                                                                      /* sidebar */
+}
+.div6{
+    background: rgb(133, 138, 201);
+    grid-column: 1/4; 
+    /* thos are same ,,,span and 1/4 aur 1/span 3
+    ya grid-column: 1/span 3; */
+                                                                                    /* main content */
+}
+.div7{
+    background: rgb(216, 34, 10);
+    grid-column: 1/-1;  
+                                                                                         /* footer */
+/* close up ---------------------________________-------------------------__________________________________---------------------------- _________________-----------------------_______________________--------------------- */
+} 
+   
+
+
+
+ *{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+ }
+.header1{
+    background-color: aqua;
+    height: 100vh;
+    border: 5px black solid;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    column-gap: 3px;
+    row-gap: 3px;
+}
+.main1{
+    background-color: rgb(226, 132, 132);
+    text-align: center;
+    color: white;
+    grid-column: 1/5;
+}
+.sidebar1{
+        color: white;
+        background-color: rgb(194, 78, 78);
+       text-align: center;
+       color: white;
+       grid-row: 2/4;
+}
+.sidebar2{
+    background-color: rgb(9, 31, 224);
+    text-align: center;
+    color: white;
+    grid-row: 2/4;
+    grid-column: 4/5;
+    float: right;
+}
+.box11{
+    background-color: rgb(200, 72, 226);
+    text-align: center;
+    color: white;
+}
+.box12{
+    background-color: rgb(13, 204, 188);
+    text-align: center;
+    color: white;
+}
+.box13{
+    background-color: rgb(218, 209, 90);
+    text-align: center;
+    color: white;
+}
+.footer1{
+    background-color: rgba(97, 46, 46, 0.575);
+    text-align: center;
+    color: white;
+    grid-column: 1/5;
+/* close up ---------------------________________-------------------------__________________________________---------------------------- _________________-----------------------_______________________--------------------- */
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: airal Arial, Helvetica, sans-serif;
+
+}
+ 
+    #logo{
+        width: 100%;
+        min-height: 50px;
+        background-color: lightgray;
+        line-height: 50px;
+        margin-bottom: 10px;
+    }
+
+    #nav{
+        width: 100%;
+        min-height: 30px;
+        background-color: lightgray;
+        text-align: center;
+        line-height: 30px;
+        margin-bottom: 10px;
+    }
+    #header{
+        width: 100%;
+        min-height: 100px;
+        background-color: lightgray;
+        line-height: 100px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    #main div{
+        width: 100px;
+        min-height: 400px;
+        background-color: gray;
+    }
+    #sidebar{
+        width: 20%;
+        min-height: 400px;
+        background-color: lightgray;
+        float: left;
+    }
+    #bodyarea{
+        width: 75%;
+        min-height: 400px;
+        background-color: lightgray;
+        float: right;
+        /* close up ---------------------________________-------------------------__________________________________---------------------------- _________________-----------------------_______________________--------------------- */
+
+    }
